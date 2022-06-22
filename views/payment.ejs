@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+</head>
+<body>
+    <form action="/payment" method="post">
+        </div>
+            <label for="credit">Enter Card Number</label>
+            <input id="credit" name="credit" type="tel" inputmode="numeric" pattern="[0-9\s]{19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+    
+        </div>
+            <label for="amount">Enter Amount</label>
+            <input type="number" name="amount" id="amount" required>
+        <div>
+    </form>
+    <button type="submit"> Pay amount</button>
+</body>
+</html>

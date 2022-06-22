@@ -1,0 +1,29 @@
+<h1>Register an account</h1>
+<form action="/register" method="POST">
+    <div>
+        <label for="username">Enter Username</label>
+        <input type="text" name="username" id="username" required>
+    <div>
+
+    </div>
+        <label for="password">Enter Password</label>
+        <input type="password" name="password" id="password" pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,15}$" required>
+    <div>
+
+    </div>
+        <label for="email">Enter email</label>
+        <input type="email" id="email" name="email" required>
+    <div>
+
+    </div>
+        <label for="birthday">Enter D.O.B</label>
+        <input type="date" name="birthday" id="birthday" required>
+    <div>
+
+    </div>
+        <label for="credit">Enter Card Number</label>
+        <input id="credit" name="credit" type="tel" inputmode="numeric" pattern="[0-9\s]{19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+    </div>
+    <button type="submit"> Register account</button>
+</form>
+<a href="/login">Login</a>

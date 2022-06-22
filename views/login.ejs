@@ -1,0 +1,16 @@
+<h1>Login to an account</h1>
+<% if (messages.error) { %>
+    <%= messages.error %>
+<% } %>
+<form action="/login" method="POST">
+    <div>
+        <label for="username">Enter Username</label>
+        <input type="text" name="username" id="username" required>
+    <div>
+    </div>
+        <label for="password">Enter Password</label>
+        <input type="password" name="password" id="password" pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,15}$" required>
+    <div>
+    <button type="submit"> Login </button>
+</form>
+<a href="/register">Register</a>
